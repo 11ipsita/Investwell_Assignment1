@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Mulish:wght@200&display=swap');
+
+
+body{
+    background-image: url('image.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+table{
+    width: 90%;
+    margin: 40px auto;
+    background-color: #ffffff;
+  opacity: 0.6;
+  box-shadow: 10px 10px 5px grey;
+}
+
+
+table.list{
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+}
+
+td{
+    border: 2px solid rgb(19, 18, 18);
+    text-align: left;
+    padding: 8px 15px;
+}
+
+.header1 h2{
+    text-align: center;
+}
+
+th{
+    border: 2px solid #0f0f0f;
+    text-align: center;
+    padding: 8px ;
+}
+
+tr:nth-child(even), table.list thread> tr{
+    background-color: rgb(204, 200, 200);
+    color: #000;
+}
+
+input[type="text"],input[type="number"], input[type="email"]{
+    width: 91%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(204, 200, 200);
+    border-radius: 4px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+}
+
+input[type="submit"], input[type="reset"]{
+    background: rgb(22, 9, 139);
+    padding: 10px 20px;
+    margin: 15px 0 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+    color: #fff;
+
+}
+
+input[type="submit"]:hover{
+    background: #4b99d8;
+    color: #000;
+    font-weight: bold;
+}
+input[type="reset"]:hover{
+    background: #4b99d8;
+    color: #000;
+    font-weight: bold;
+}
+
+button{
+    background: rgb(22, 9, 139);
+    padding: 10px 20px;
+    margin: 15px 0 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+    color: #fff;
+}
+button:hover{
+    background: #4b99d8;
+    color: #000;
+    font-weight: bold;
+}
+
+label.validation-error{
+    color:   darkred;
+    margin-left: 5px;
+}
+
+.hide{
+    display:none;
+}
+
