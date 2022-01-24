@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Assessment 1</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <table>
+            <tr>
+                
+                <td>
+                    <div class="header">
+                        <h2>SIGNUP FORM</h2>
+                    </div>
+
+                    <form autocomplete="off" onsubmit="event.preventDefault(); onFormSubmit();">
+                        <div>
+                        <label>First Name <span style="color: red">*</span></label>
+                        <label class="validation-error hide" id="firstNameValidationError">This field is required.</label>
+                        <input type="text" name="firstName"  placeholder="Enter your firstname" id="firstName">
+                        </div>
+
+                        <div>
+                            <label>Last Name <span style="color: red">*</span></label>
+                            <label class="validation-error hide" id="lastNameValidationError">This field is required.</label>
+                            <input type="text" name="lastName" id="lastName" placeholder="Enter your lastname">
+                        </div>
+
+                        <div>
+                            <label>Email <span style="color: red">*</span></label>
+                            <label class="validation-error hide" id="emailValidationError">This field is required.</label>
+                            <input type="email" name="email" id="email" placeholder="Enter your email">
+                        </div>
+
+                        <div>
+                            <label>Salary</label>
+                            <input type="number" name="salary" id="salary">
+                        </div>
+                        
+                        <div>
+                            <label>City</label>
+                            <input type="text" name="city" id="city">
+                        </div>
+
+                        <div>
+                            <label><span style="color: red">* Required</span></label>
+                        </div>
+
+                        <div class="form-action-buttons">
+                            <input type="submit" value="SIGN UP">
+                            <input type="reset" value="Reset">
+                        </div>
+                    </form>
+                </td>
+
+                <td>
+                    <div class="header1">
+                        <h2>USER DETAILS</h2>
+                    </div>
+                    <table class="list" id="employeeList">
+                        <thead>
+                            <tr>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Email</th>
+                                <th>Salary</th>
+                                <th>City</th>
+                                <th>Action</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+
+        <script src="script.js"></script>
+    </body>
+</html>
